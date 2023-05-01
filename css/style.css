@@ -1,1 +1,44 @@
-/*# sourceMappingURL=style.css.map */
+.wrapper {
+  margin: 40px auto;
+  max-width: 1160px;
+}
+
+.body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  gap: 30px;
+}
+.menu a {
+  text-decoration: none;
+  color: #F03000;
+  padding: 20px;
+}
+.menu a:hover {
+  background-color: #F03000;
+  color: white;
+}
+.menu__logo {
+  max-width: 250px;
+}
+.menu__buttons {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -5,5 +5,65 @@ $grey-dark: #444444;
 $font-fancy: 'Montserrat', sans-serif;
 $font-regular: 'Open Sans', sans-serif;
 
-$margin-standart: 40px;
-$margin-half: 20px;
+$spacer: 40px;
+$spacer-half: 20px;
+
+
+.wrapper {
+    margin: $spacer auto;
+    max-width: 1160px;
+}
+
+.body {
+    font-family: $font-regular;
+    font-size: 16px;
+    color: black;
+}
+
+
+// menu
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $font-fancy;
+    gap: 30px; //nebo jinak??? nesedí rozměr ve zbytku návrhu, krom tohoto je všude 20/40
+
+        & a {
+            text-decoration: none;
+            color: $color-main;
+            padding: $spacer-half;
+        }
+
+        & a:hover {
+            background-color: $color-main;
+            color: white;
+        }
+
+        &__logo {
+            max-width: 250px;
+        }
+
+        &__buttons {
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: $spacer-half;
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+}
+
+
+
+
+    // // menu tablet
+    // @media screen and (min-width: 768px) {
+
+        
+    // }
